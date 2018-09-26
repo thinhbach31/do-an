@@ -10,7 +10,6 @@
         android:id="@+id/main_frame_layout"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:background="@color/color_black2"
         app:layout_constraintBottom_toTopOf="@id/contrain_playing"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
