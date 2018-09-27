@@ -9,8 +9,11 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.example.thinhbachvan.soundcloud.R;
+import com.example.thinhbachvan.soundcloud.data.model.Genre;
 
-public class GenreFragment extends Fragment {
+import java.util.List;
+
+public class GenreFragment extends Fragment implements GenreContract.View {
 
     @Nullable
     @Override
@@ -18,5 +21,10 @@ public class GenreFragment extends Fragment {
                              @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_genre, container, false);
         return view;
+    }
+
+    @Override
+    public void showGenre(List<Genre> genres) {
+
     }
 }
