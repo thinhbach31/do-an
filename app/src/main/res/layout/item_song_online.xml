@@ -4,16 +4,18 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="@dimen/dp_120"
-    android:background="@color/color_black2">
+    android:background="@color/color_black2"
+    >
 
     <ImageView
         android:id="@+id/image_songOnline"
         android:layout_width="match_parent"
         android:layout_height="0dp"
+        android:layout_marginTop="@dimen/dp_5"
+        android:scaleType="centerInside"
         app:layout_constraintBottom_toTopOf="@+id/view_onlineView"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/text_onlineSongName"
