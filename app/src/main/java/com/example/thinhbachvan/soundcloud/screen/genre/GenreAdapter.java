@@ -27,6 +27,10 @@ public class GenreAdapter extends RecyclerView.Adapter<GenreAdapter.ViewHolder> 
         mContext = context;
     }
 
+    public Context getContext() {
+        return mContext;
+    }
+
     @NonNull
     @Override
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup viewGroup, int i) {
@@ -60,7 +64,7 @@ public class GenreAdapter extends RecyclerView.Adapter<GenreAdapter.ViewHolder> 
         }
 
         public void bindView(final Genre genre, final onGenreSelectListener listener){
-            mTextGenre.setText(genre.getTitleResource());
+            mTextGenre.setText(genre.getApiName());
             Glide.with(mImageGenre).load(genre.getImageResource()).into(mImageGenre);
             mImageGenre.setOnClickListener(new View.OnClickListener() {
                 @Override
