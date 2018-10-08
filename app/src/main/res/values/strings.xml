@@ -9,4 +9,5 @@
     <string name="title_country">Country</string>
     <string name="title_ambient">Ambient</string>
     <string name="title_classic">Classic</string>
+    <string name="messenger_load_track_fail">Load track fail!</string>
 </resources>
