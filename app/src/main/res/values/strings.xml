@@ -10,4 +10,9 @@
     <string name="title_ambient">Ambient</string>
     <string name="title_classic">Classic</string>
     <string name="messenger_load_track_fail">Load track fail!</string>
+    <string name="title_search">search</string>
+    <string name="title_online_liked">Online track liked</string>
+    <string name="title_offline_liked">Offline track liked</string>
+    <string name="text_time_song">00:00</string>
+    <string name="app_name2">ＲｅｅｅＣｌｏｕｄ</string>
 </resources>

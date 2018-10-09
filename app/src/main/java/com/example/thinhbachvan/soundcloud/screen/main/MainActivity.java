@@ -1,12 +1,16 @@
 package com.example.thinhbachvan.soundcloud.screen.main;
 
+import android.content.Intent;
 import android.support.constraint.ConstraintLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.View;
 import android.widget.FrameLayout;
 
 import com.example.thinhbachvan.soundcloud.R;
 import com.example.thinhbachvan.soundcloud.screen.home.HomeFragment;
+import com.example.thinhbachvan.soundcloud.screen.playing.PlayingActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -20,6 +24,20 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         initView();
         addFragment();
+        getSupportActionBar().setTitle(R.string.app_name2);
+
+        mLayoutPlaying.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, PlayingActivity.class));
+            }
+        });
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.menu, menu);
+        return super.onCreateOptionsMenu(menu);
     }
 
     private void addFragment() {
