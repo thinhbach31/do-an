@@ -10,24 +10,24 @@ public class StringUtils {
     public static String convertUrlFetchMusicGenre(String genre, int limit, int offset) {
         return String.format("%s%s%s%s=%s&%s=%d&%s=%d", ConstantNetwork.BASE_URL,
                 ConstantNetwork.PARA_MUSIC_GENRE, genre, ConstantNetwork.CLIENT_ID,
-                BuildConfig.API_KEY, ConstantNetwork.LIMIT, limit,
+                /*, ConstantNetwork.LIMIT*/"sdf", limit,
                 ConstantNetwork.PARA_OFFSET, offset);
     }
 
     public static String getUrlStreamTrack(String uriTrack) {
         return String.format("%s/%s?%s=%s", uriTrack, ConstantNetwork.PARA_STREAM,
-                ConstantNetwork.CLIENT_ID, BuildConfig.API_KEY);
+                ConstantNetwork.CLIENT_ID, "sdf"/* ,BuildConfig.API_KEY*/);
     }
 
     public static String convertURlDownloadTrack(String url) {
-        return String.format("%s?%s=%s", url, ConstantNetwork.CLIENT_ID,
-                BuildConfig.API_KEY);
+        return String.format("%s?%s=%s", url, ConstantNetwork.CLIENT_ID,"sdf"
+                /*BuildConfig.API_KEY*/);
     }
 
     public static String convertUrlSearchTrack(String trackName, int limit, int offset) {
         return String.format("%s%s%s&%s=%d&%s=%d&%s=%s", ConstantNetwork.BASE_URL,
                 ConstantNetwork.PARA_SEARCH_TRACK, trackName, ConstantNetwork.LIMIT, limit,
-                ConstantNetwork.PARA_OFFSET, offset, ConstantNetwork.CLIENT_ID,
-                BuildConfig.API_KEY);
+                ConstantNetwork.PARA_OFFSET, offset, ConstantNetwork.CLIENT_ID, "sdf"
+                /*BuildConfig.API_KEY*/);
     }
 }
