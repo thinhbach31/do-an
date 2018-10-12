@@ -30,6 +30,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(MainActivity.this, PlayingActivity.class));
+                overridePendingTransition(R.anim.slide_up, R.anim.slide_up);
             }
         });
     }

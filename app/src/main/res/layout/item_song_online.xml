@@ -18,7 +18,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/text_onlineSongName"
+        android:id="@+id/text_offlineSongName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/dp_5"
@@ -28,11 +28,11 @@
         android:paddingEnd="@dimen/dp_5"
         android:text="@string/title_Songname"
         android:textColor="@color/color_White"
-        app:layout_constraintBottom_toTopOf="@id/text_onlineSongArtist"
+        app:layout_constraintBottom_toTopOf="@id/text_offlineSongArtist"
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
-        android:id="@+id/text_onlineSongArtist"
+        android:id="@+id/text_offlineSongArtist"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/dp_5"
