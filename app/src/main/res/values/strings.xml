@@ -15,4 +15,6 @@
     <string name="title_offline_liked">Offline track liked</string>
     <string name="text_time_song">00:00</string>
     <string name="app_name2">ＲｅｅｅＣｌｏｕｄ</string>
+    <string name="error_no_track">There\'s no song!</string>
+    <string name="error_load_song">Cannot load songs!</string>
 </resources>
