@@ -64,8 +64,8 @@ public class LibraryAdapter extends RecyclerView.Adapter<LibraryAdapter.ViewHold
             this.mListener = listener;
             this.mTracks = tracks;
             this.mContext = itemView.getContext();
-            mTextSongName = itemView.findViewById(R.id.text_offlineSongName);
-            mTextArtist = itemView.findViewById(R.id.text_offlineSongArtist);
+            mTextSongName = itemView.findViewById(R.id.text_onlineSongName);
+            mTextArtist = itemView.findViewById(R.id.text_onlineSongArtist);
             mImageSong = itemView.findViewById(R.id.image_offlineSong);
 
             itemView.setOnClickListener(new View.OnClickListener() {
