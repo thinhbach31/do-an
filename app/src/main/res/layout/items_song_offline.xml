@@ -16,7 +16,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/text_offlineSongName"
+        android:id="@+id/text_onlineSongName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/dp_10"
@@ -31,7 +31,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/text_offlineSongArtist"
+        android:id="@+id/text_onlineSongArtist"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/dp_10"
@@ -42,7 +42,7 @@
         app:layout_constraintEnd_toStartOf="@+id/buton_offlineLike"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@id/image_offlineSong"
-        app:layout_constraintTop_toBottomOf="@id/text_offlineSongName" />
+        app:layout_constraintTop_toBottomOf="@id/text_onlineSongName" />
 
     <ImageButton
         android:id="@+id/buton_offlineLike"
