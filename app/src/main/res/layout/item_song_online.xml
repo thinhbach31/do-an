@@ -18,7 +18,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/text_offlineSongName"
+        android:id="@+id/text_onlineSongName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/dp_5"
@@ -28,11 +28,11 @@
         android:paddingEnd="@dimen/dp_5"
         android:text="@string/title_Songname"
         android:textColor="@color/color_White"
-        app:layout_constraintBottom_toTopOf="@id/text_offlineSongArtist"
+        app:layout_constraintBottom_toTopOf="@id/text_onlineSongArtist"
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
-        android:id="@+id/text_offlineSongArtist"
+        android:id="@+id/text_onlineSongArtist"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/dp_5"
@@ -65,7 +65,7 @@
         app:layout_constraintTop_toBottomOf="@id/view_onlineView" />
 
     <TextView
-        android:id="@+id/text_playing"
+        android:id="@+id/text_playingOnline"
         android:layout_width="wrap_content"
         android:layout_height="@dimen/dp_25"
         android:layout_marginStart="@dimen/dp_5"
@@ -80,7 +80,7 @@
         app:layout_constraintTop_toBottomOf="@+id/image_songOnline" />
 
     <ImageButton
-        android:id="@+id/button_download"
+        android:id="@+id/button_downloadOnline"
         android:layout_width="@dimen/dp_25"
         android:layout_height="@dimen/dp_25"
         android:layout_marginEnd="@dimen/dp_10"
@@ -102,7 +102,7 @@
         android:textColor="@color/color_White"
         android:textSize="@dimen/sp_12"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@id/button_download"
+        app:layout_constraintEnd_toStartOf="@id/button_downloadOnline"
         app:layout_constraintTop_toBottomOf="@+id/image_songOnline" />
 
     <ImageButton
