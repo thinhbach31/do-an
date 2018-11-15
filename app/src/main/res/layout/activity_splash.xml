@@ -8,4 +8,10 @@
     android:background="@drawable/splash"
     tools:context=".screen.splash.Splash">
 
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/gif_splash"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
 </android.support.constraint.ConstraintLayout>

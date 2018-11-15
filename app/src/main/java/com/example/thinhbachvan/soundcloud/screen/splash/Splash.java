@@ -5,14 +5,16 @@ import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-import com.example.thinhbachvan.soundcloud.Base;
 import com.example.thinhbachvan.soundcloud.R;
 import com.example.thinhbachvan.soundcloud.screen.main.MainActivity;
+
+import pl.droidsonroids.gif.GifImageView;
 
 public class Splash extends AppCompatActivity implements SplashContract.View {
 
     private SplashContract.Presenter mPresenter;
-    private static final int SPLASH_DISPLAY_LENGTH = 2000;
+    private static final int SPLASH_DISPLAY_LENGTH = 3000;
+    private GifImageView mGifImageView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,6 +22,8 @@ public class Splash extends AppCompatActivity implements SplashContract.View {
         setContentView(R.layout.activity_splash);
         mPresenter = new SplashPresenter(this);
         handler();
+        mGifImageView = findViewById(R.id.gif_splash);
+        mGifImageView.setImageResource(R.drawable.splashgif);
     }
 
     private void handler() {

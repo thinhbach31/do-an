@@ -10,7 +10,8 @@ public class StringUtils {
     public static String convertUrlFetchMusicGenre(String genre, int limit, int offset) {
         return String.format("%s%s%s%s=%s&%s=%d&%s=%d", ConstantNetwork.BASE_URL,
                 ConstantNetwork.PARA_MUSIC_GENRE, genre, ConstantNetwork.CLIENT_ID,
-                ConstantNetwork.LIMIT, limit, ConstantNetwork.PARA_OFFSET, offset);
+                BuildConfig.API_KEY, ConstantNetwork.LIMIT, limit,
+                ConstantNetwork.PARA_OFFSET, offset);
     }
 
     public static String getUrlStreamTrack(String uriTrack) {
